@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: #fff;
+}
+.scan1{
+    max-width: 1000px;
+    /* background-color: bisque; */
+    margin: 20px auto;
+
+    padding: 20px;
+    align-items: center;
+}
+
+.scan1 h1{
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #40010d;
+    text-align: center;
+}
+
+.scan1 h5{
+    color: #57393f;
+    text-align: center;
+    margin-bottom: 30px;
+}
+h5:hover{
+        font-size: 16px;
+        color: #40010d;
+    }
+.scan-images{
+    display: flex;
+    margin-top: 20px;
+    gap: 180px;
+    justify-content: center;
+}
+
+
+.scan-buttons{
+    display: flex;
+    justify-content: center;
+    gap: 140px;
+    margin-top: 2px;
+}
+.scan-btn{
+    border: none;
+    outline: none;
+    padding: 1px;
+    cursor: pointer;
+    
+}
+
+
+.scan2{
+    max-width: 1000px;
+    /* background-color: bisque; */
+    margin: 20px auto;
+
+    padding: 20px;
+    align-items: center;
+}
+
+.scan2 h1{
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #40010d;
+    text-align: center;
+}
+
+.scan2 h5{
+    color: #57393f;
+    text-align: center;
+    margin-bottom: 30px;
+}
+h5:hover{
+        font-size: 16px;
+        color: #40010d;
+    }
+.scan-images{
+    display: flex;
+    margin-top: 20px;
+    gap: 180px;
+    justify-content: center;
+}
+
+
+.scan-buttons{
+    display: flex;
+    justify-content: center;
+    gap: 140px;
+    margin-top: 2px;
+}
+.scan-btn{
+    border: none;
+    outline: none;
+    padding: 1px;
+    cursor: pointer;
+    
+}
+
+
+.scan3{
+    max-width: 1000px;
+    /* background-color: bisque; */
+    margin: 20px auto;
+
+    padding: 20px;
+    align-items: center;
+}
+
+.scan3 h1{
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #40010d;
+    text-align: center;
+}
+
+.scan3 h5{
+    color: #57393f;
+    text-align: center;
+    margin-bottom: 30px;
+}
+h5:hover{
+        font-size: 16px;
+        color: #40010d;
+    }
+.scan-images{
+    display: flex;
+    margin-top: 20px;
+    gap: 180px;
+    justify-content: center;
+}
+
+
+.scan-buttons{
+    display: flex;
+    justify-content: center;
+    gap: 140px;
+    margin-top: 2px;
+}
+.scan-btn{
+    border: none;
+    outline: none;
+    padding: 1px;
+    cursor: pointer;
+    
+}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>De Maison Collection</title>
+  <link rel="stylesheet" href="Aifit-Profile.css" />
+  <link rel="stylesheet" href="cart.css" />
+</head>
+<body>
+<main id="container">
+  <!-- Navigation -->
+  <header>
+    <nav class="navbar">
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Women</a></li>
+            <li><a href="#">Shop</a></li>
+            <li><a href="#">New Arrival</a></li>
+            <li><a href="#sub">Contact</a></li>
+        </ul>
+        <div class="logo"> <img src="images/Logo.png" alt="Logo Image"></div>
+      <div class="nav-icons">
+        <span><img src="images/MagnifyingGlass.jpg" alt="search icon"></span>
+        <span><img src="images/User.jpg" alt="user icon"></span>
+        <span><img src="images/ShoppingCart.jpg" alt="cart icon"></span>
+        <span><img src="images/BellSimple.jpg" alt="Notification bell"></span>
+        <span><img src="images/Heart.jpg" alt="Love heart"></span> 
+      </div>
+      <div class="AiProfile"> <button><a href="Aifit-Profile.html"></a>AiFitProfile </button></div>
+    </nav>
+  </header>
+    <h1 class="cart-head"> Your cart</h1>
+    <!-- Cart Section -->
+     <section class="cart">
+        <div class="cart-container">
+            <div class="cart-item">
+            <img src="images/cart L.png" alt="Product Image"/>
+            </div>>
+
+            <div class="cart-itemright">
+            <img src="images/cart R.png" alt="Product Image"/>
+            <button class="checkout" onclick="showPopup()">Go to Checkout </button>
+            <script>
+    function showPopup() {
+      alert("PROCESSING FOR PAYMENT...");
+    }
+  </script>
+            
+            </div>
+           
+        </div>
+     </section>
+
+     <section class="offer">
+        <div class="text-div">
+            <h2 class=offer-text>STAY UPTO DATE ABOUT OUR LATEST OFFERS</h2>
+        </div>
+        <div class="subscribe">
+            <input type="email" placeholder="Enter your email address" class="email-input" required/> 
+            <button id="sub" class="subscribe-button" onclick="showPopup()">Subscribe to Newsletter</button>
+            <script>
+    function showPopup() {
+      alert("SUBSCRIPTION SUCCESSFUL...THANK YOU!");
+    }
+  </script>
+        </div>
+     </section>
+   <!-- Footer -->
+  <footer>
+    <div class="footer-links">
+      <a href="#">Customer Service</a>
+      <a href="#">Company Info</a>
+      <a href="#">Social Media</a>
+    </div>
+    <p>&copy; 2025 De Maison Collection. <br> All rights reserved.</p>
+  </footer>
+  </main>
+</body>
+</html>

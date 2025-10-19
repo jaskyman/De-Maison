@@ -1,0 +1,191 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #fff;
+}
+
+/* Container */
+.signup-container {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+}
+
+/* Left Side Image */
+.signup-image {
+  flex: 1;
+  background: url('https://cdn.pixabay.com/photo/2024/11/08/05/28/man-9182458_640.jpg') no-repeat center center/cover;
+  position: relative;
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+  margin-left: 1px;
+  margin-top: 1px;
+  margin-bottom: 2px;
+}
+
+.overlay-text {
+  position: absolute;
+  bottom: 10px;
+  left: 40px;
+  text-align: center;
+  padding-bottom: 50px;
+  padding-left: 10%;
+  color: #fff;
+  font-size: 1.8rem;
+  font-weight: 600;
+  max-width: 80%;
+  line-height: 1.4;
+}
+
+/* Right Side Form */
+.signup-form {
+  flex: 1;
+  padding: 80px;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.signup-form h2 {
+  font-size: 1.8rem;
+  color: #2b1b1b;
+  margin-bottom: 30px;
+}
+
+.signup-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.signup-form label {
+  font-size: 0.9rem;
+  margin-bottom: 6px;
+  color: #333;
+}
+
+.signup-form input {
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 0.95rem;
+}
+
+.password-wrapper {
+  position: relative;
+}
+
+.toggle-password {
+  position: absolute;
+  right: 12px;
+  top: 35%;
+  cursor: pointer;
+  font-size: 1.1rem;
+}
+
+.checkbox {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.checkbox input {
+  margin-right: 8px;
+}
+
+.checkbox a {
+  color: #6a0a0a;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.btn {
+  background: #4b1111;
+  color: #fff;
+  padding: 14px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.btn:hover {
+  background: #7a3636;
+}
+
+/* Social buttons */
+.or {
+  text-align: center;
+  margin: 30px 0 15px;
+  color: #444;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.social-btn {
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  background: transparent;
+  padding: 10px;
+  cursor: pointer;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-btn img {
+  width: 22px;
+  height: 22px;
+}
+
+.login-link {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 0.9rem;
+}
+
+.login-link a {
+  color: #4b1111;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .signup-container {
+    flex-direction: column;
+  }
+
+  .signup-image {
+    height: 50vh;
+    border-radius: 0;
+  }
+
+  .signup-form {
+    padding: 40px 20px;
+  }
+
+  .overlay-text {
+    font-size: 1.4rem;
+    bottom: 20px;
+    left: 20px;
+  }
+}
