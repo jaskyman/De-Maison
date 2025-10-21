@@ -24,3 +24,11 @@ function updateCountdown() {
 }
 
 setInterval(updateCountdown, 1000);
+
+const AnaLyz = document.getElementById ('ana-btn');
+const model = document.querySelector('.model');
+
+AnaLyz.addEventListener('click', ()=> {
+  model.style.display = 'flex';
+})
+

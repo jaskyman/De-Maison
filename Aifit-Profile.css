@@ -175,6 +175,14 @@ gap: 33px;
   justify-content: center;
   gap: 2rem;
   margin-top: 1rem;
+  border-radius: 10px;
+}
+.product-grid img{
+  border-radius: 15px;
+}
+.product-item img{
+  width: 100%;
+  border-radius: 10px;
 }
 .collection-grid, a, img{
   /* flex-wrap: wrap; */
