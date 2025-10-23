@@ -6,55 +6,45 @@
 }
 
 body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
   background: #fff;
+  color: #1c1c1c;
 }
 
-/* Container */
+/* Main container */
 .signup-container {
   display: flex;
-  width: 100%;
-  height: 100vh;
+  min-height: 100vh;
 }
 
-/* Left Side Image */
+/* Left Section (image) */
 .signup-image {
-  flex: 1;
+  flex: 0 1 auto;
   background: url('https://cdn.pixabay.com/photo/2024/11/08/05/28/man-9182458_640.jpg') no-repeat center center/cover;
   position: relative;
-  border-top-right-radius: 12px;
-  border-bottom-right-radius: 12px;
-  margin-left: 1px;
-  margin-top: 1px;
-  margin-bottom: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  border-top-right-radius: 16px;
+  border-bottom-right-radius: 16px;
 }
 
 .overlay-text {
-  position: absolute;
-  bottom: 10px;
-  left: 40px;
-  text-align: center;
-  padding-bottom: 50px;
-  padding-left: 10%;
   color: #fff;
+  text-align: left;
+  padding: 40px;
   font-size: 1.8rem;
   font-weight: 600;
-  max-width: 80%;
   line-height: 1.4;
+  max-width: 80%;
 }
 
-/* Right Side Form */
+/* Right Section (form) */
 .signup-form {
   flex: 1;
   padding: 80px;
-  background: #fff;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-top: 40px;
 }
 
 .signup-form h2 {
@@ -96,12 +86,11 @@ body {
 
 .checkbox {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
+  gap: 6px;
   margin-bottom: 20px;
-}
-
-.checkbox input {
-  margin-right: 8px;
+  font-size: 0.9rem;
+  line-height: 1.3;
 }
 
 .checkbox a {
@@ -125,11 +114,11 @@ body {
   background: #7a3636;
 }
 
-/* Social buttons */
+/* Social Buttons */
 .or {
   text-align: center;
   margin: 30px 0 15px;
-  color: #444;
+  color: #555;
 }
 
 .social-icons {
@@ -149,6 +138,11 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: background 0.3s ease;
+}
+
+.social-btn:hover {
+  background: #f4f4f4;
 }
 
 .social-btn img {
@@ -168,24 +162,60 @@ body {
   text-decoration: none;
 }
 
-/* Responsive */
-@media (max-width: 900px) {
+/* ----------- MOBILE OPTIMIZATION ----------- */
+@media (max-width: 992px) {
   .signup-container {
     flex-direction: column;
   }
 
   .signup-image {
-    height: 50vh;
+    height: 45vh;
     border-radius: 0;
-  }
-
-  .signup-form {
-    padding: 40px 20px;
   }
 
   .overlay-text {
     font-size: 1.4rem;
-    bottom: 20px;
-    left: 20px;
+    padding: 20px;
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .signup-form {
+    padding: 40px 25px;
+  }
+
+  .signup-form h2 {
+    text-align: center;
+  }
+
+  .btn {
+    width: 100%;
+  }
+
+  .or {
+    font-size: 0.85rem;
+  }
+
+  .social-icons {
+    gap: 15px;
+  }
+
+  .login-link {
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .overlay-text {
+    font-size: 1.2rem;
+    padding: 16px;
+  }
+
+  .signup-form {
+    padding: 30px 20px;
+  }
+
+  .signup-form h2 {
+    font-size: 1.5rem;
   }
 }
