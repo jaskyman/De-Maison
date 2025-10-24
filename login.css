@@ -22,9 +22,10 @@ body {
 
 /* Left Image Section */
 .login-image {
-  flex: 0.5 1 auto;
+  flex: 0.2 0 2;
   background: url('https://theelitevip.com/wp-content/uploads/2021/09/girl-model-portrait-1333640-682x1024.jpg') no-repeat center center/cover;
-  position: relative;
+  margin: 0;
+  padding: auto;
   display: flex;
   justify-content: center;
   align-items: flex-end;
@@ -33,7 +34,7 @@ body {
 }
 
 .overlay-text {
-  position: absolute;
+  margin: auto;
   bottom: 50px;
   left: 40px;
   color: #4b1111;
