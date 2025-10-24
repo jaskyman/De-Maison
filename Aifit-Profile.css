@@ -20,13 +20,13 @@ body {
 
 
 /* Responsive styles for mobile */
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   body {
     padding: 10px;
     display: block;
     
   }
-} 
+}  */
 
 
 header {
@@ -271,4 +271,130 @@ footer {
   font-weight: 500;
   text-align: center;
   align-items: center;
+}
+
+/* Base styles (for desktop) go above this */
+
+/* Mobile responsiveness */
+@media screen and (max-width: 768px) {
+  /* Navigation */
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+  }
+
+  .nav-links li {
+    margin: 10px 0;
+  }
+
+  .nav-icons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  .AiProfile {
+    margin-top: 10px;
+  }
+
+  /* Hero Banner */
+  .hero .bg img {
+    width: 100%;
+    height: auto;
+  }
+
+  /* Collection Icons */
+  .collection-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .collection-item {
+    margin-bottom: 15px;
+  }
+
+  /* Gender Collection */
+  .collection-gender {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .gender-item {
+    margin-bottom: 15px;
+  }
+
+  /* AI Features */
+  .ai-icons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .ai-icons img {
+    width: 60px;
+    height: auto;
+  }
+
+  /* Products */
+  .product-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .product-item {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .product-item img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+  }
+
+  /* Testimonials */
+  .testimonial-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .testimonial {
+    margin-bottom: 15px;
+  }
+
+  /* Instagram Grid */
+  .insta-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .insta-item {
+    margin-bottom: 10px;
+  }
+
+  /* Footer */
+  .footer-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-links a {
+    margin: 5px 0;
+  }
 }
